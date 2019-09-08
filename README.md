@@ -2,6 +2,7 @@
 
 - [Select Objects from HTML](#select-objects-from-html)
 - [Events](#events)
+- [Apply Classes with Javascript](#apply-classes-with-javascript)
 
 ## Select Objects From HTML
 
@@ -59,3 +60,34 @@ divElt.addEventListener("click", (e) => {
 
 - Don't forget the closing `});` at the end
 - Don't forget the `(e)`
+
+## Apply Classes With Javascript
+
+When you have a class defined in a CSS file, use the following methods to apply that style to HTML elements:
+
+- `.classList.add()`
+- `.classList.remove()`
+- `.classList.toggle()`
+
+**CSS**
+```CSS
+.red {
+  background-color: red;
+}
+.blue {
+  background-color: blue;
+}
+```
+
+**Javascript**
+```javascript
+redBtn.addEventListener("click", (e) => {
+    divElt.classList.remove("blue");
+    divElt.classList.add("red");
+});
+
+blueBtn.addEventListener("click", (e) => {
+    divElt.classList.remove("red");
+    divElt.classList.add("blue");
+});
+```
