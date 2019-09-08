@@ -5,7 +5,7 @@
 - [Apply Classes with Javascript](#apply-classes-with-javascript)
 - [Change Text On A Website](#change-text-on-a-website)
 - [Prompt The User](#prompt-the-user)
-
+- [Use Variables In Text](#use-variables-in-text)
 
 ## Select Objects From HTML
 
@@ -161,3 +161,26 @@ divElt.style.background = color;
 ### Practice Repositories
 
 - [Choose-Your-Own Newspaper](https://github.com/dschneideramphi/ahs-design-newspaper)
+
+# Use Variables In Text
+
+Using back-ticks, you can use `${___}` to insert a variable in the middle of a string. This is useful when using `.innerHTML` to create a full sentence rather than piece by piece
+
+**Javascript**
+```javascript
+let name = "Schneider";
+let hobby = "Origami";
+console.log(`My name is ${name} and I like ${hobby}`);
+name = "Rossi";
+hobby = "Football";
+console.log(`My name is ${name} and I like ${hobby}`);
+```
+
+**Result**
+> My name is Schneider and I like Origami
+
+> My name is Rossi and I like Football
+
+### Practice Repositories
+
+- [Mad Lib](https://github.com/dschneideramphi/ahs-mad-lib)
