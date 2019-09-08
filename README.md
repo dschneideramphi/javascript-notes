@@ -3,6 +3,8 @@
 - [Select Objects from HTML](#select-objects-from-html)
 - [Events](#events)
 - [Apply Classes with Javascript](#apply-classes-with-javascript)
+- [Change Text On A Website](#change-text-on-a-website)
+
 
 ## Select Objects From HTML
 
@@ -104,3 +106,35 @@ blueBtn.addEventListener("click", (e) => {
 ### Practice Repositories
 
 [Class Button Lab](https://github.com/upperlinecode/class-button-js-lab)
+
+## Change Text On A Website
+
+Use `.innerHTML` to change the text that is between an opening an closing HTML tag.
+
+**Initial HTML**
+
+```HTML
+<div>
+  My Name Is <span id="name">Alice</span>
+</div>
+```
+
+**Javascript**
+```javascript
+let nameElt = document.querySelector("#name");
+nameElt.innerHTML = `Bob`;
+```
+
+**Updated HTML**
+```HTML
+<div>
+  My Name Is <span id="name">Bob</span>
+</div>
+```
+
+### Pro-Tips
+- use back-ticks rather than quotes (as above)
+- You can include other HTML as part of the `innerHTML` code
+
+### Practice Repositories
+- [Animal Selector](https://github.com/dschneideramphi/ahs-animal-selector)
