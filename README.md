@@ -61,6 +61,10 @@ divElt.addEventListener("click", (e) => {
 - Don't forget the closing `});` at the end
 - Don't forget the `(e)`
 
+### Practice Repositories
+
+[Lightbulb Selector](https://github.com/upperlinecode/lightbulb-selector-template)
+
 ## Apply Classes With Javascript
 
 When you have a class defined in a CSS file, use the following methods to apply that style to HTML elements:
@@ -91,3 +95,12 @@ blueBtn.addEventListener("click", (e) => {
     divElt.classList.add("blue");
 });
 ```
+
+### Pro-Tips
+- Use `toggle` if you want a button to switch a class on & off
+- Use `add` and `remove` if you only want one class applied at a time
+- Make sure `classList` has a capital L
+
+### Practice Repositories
+
+[Class Button Lab](https://github.com/upperlinecode/class-button-js-lab)
