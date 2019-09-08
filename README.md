@@ -1,6 +1,7 @@
 # Computer Apps II - Introduction to Javascript
 
 - [Select Objects from HTML](#select-objects-from-html)
+- [Events](#events)
 
 ## Select Objects From HTML
 
@@ -26,3 +27,35 @@ let button2Elt = document.querySelector("#button2");
 ### Practice Repositories
 
 [Lightbulb Selector](https://github.com/upperlinecode/lightbulb-selector-template)
+
+## Events
+
+Use `.addEventListener()` to an HTML element to make it _listen_ for an event. The syntax for an event looks like:
+```javascript
+____.addEventListener("____", (e) => {
+  //Event code goes here
+});
+```
+Some common events are:
+
+- click
+- mouseover
+- movemove
+- keypress
+- change
+- focus
+
+The `e` variable holds event information. This is useful for detecting where a mouse click was or what key was pressed.
+
+**Javascript**
+```javascript
+let divElt = document.querySelector("#divButton");
+divElt.addEventListener("click", (e) => {
+  console.log("Clicked on divButton");
+});
+```
+
+### Pro-Tips
+
+- Don't forget the closing `});` at the end
+- Don't forget the `(e)`
