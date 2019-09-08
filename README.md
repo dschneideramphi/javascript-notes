@@ -4,6 +4,7 @@
 - [Events](#events)
 - [Apply Classes with Javascript](#apply-classes-with-javascript)
 - [Change Text On A Website](#change-text-on-a-website)
+- [Prompt The User](#prompt-the-user)
 
 
 ## Select Objects From HTML
@@ -138,3 +139,25 @@ nameElt.innerHTML = `Bob`;
 
 ### Practice Repositories
 - [Animal Selector](https://github.com/dschneideramphi/ahs-animal-selector)
+
+# Prompt The User
+
+Use `let ____ = prompt()` to ask the user for information. The result will be stored in a variable.
+
+**Javascript**
+
+```javascript
+let color = prompt("What is your favorite color?");
+let divElt = document.querySelector("#bigDiv");
+divElt.style.background = color;
+```
+
+**The Result:** This should change the background color of a div to whatever the user types in
+
+### Pro-Tips
+
+- Even if the user types a number, the computer thinks it's a string, so trying to perform math takes some extra steps
+
+### Practice Repositories
+
+- [Choose-Your-Own Newspaper](https://github.com/dschneideramphi/ahs-design-newspaper)
