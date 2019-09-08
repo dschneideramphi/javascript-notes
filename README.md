@@ -2,7 +2,7 @@
 
 - [Select Objects from HTML](#select-objects-from-html)
 
-# Select Objects From HTML
+## Select Objects From HTML
 
 Use `document.querySelector()` to select elements from an HTML document using their ID
 
@@ -22,3 +22,7 @@ let button2Elt = document.querySelector("#button2");
 
 - Don't forget the #
 - Use `console.log` to test that you grabbed the element correctly
+
+### Practice Repositories
+
+[Lightbulb Selector](https://github.com/upperlinecode/lightbulb-selector-template)
